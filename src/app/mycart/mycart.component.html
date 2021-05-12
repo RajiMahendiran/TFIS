@@ -1,0 +1,21 @@
+<h1>YOUR CART</h1>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>IMAGE</th>
+        <th>NAME</th>
+        <th>QUANTITY</th>
+        <th>PRICE</th>
+    </tr>
+</table>
+<h2>PAYMENT MODE</h2>
+<button (click)="clickme()">{{buttonname}}</button>
+<div *ngIf="boolean">
+    <ul>
+        <li><button>CARD</button> </li>
+        <li><button>DEBIT CARD</button> </li>
+        <li><button> PAYTM</button></li>
+        <li><button>GPAY</button> </li>
+        <li><button> PHONEPE</button></li>
+    </ul>
+</div>

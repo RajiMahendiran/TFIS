@@ -1,0 +1,65 @@
+<table align="center">
+
+    <h4 class="text-center" text-style="bold" text-size=10px background="green">Login Page for Farmer</h4>
+
+<div class="container">
+	<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
+		<div class="form-group">
+			<label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" formControlName="email" placeholder="Enter email">
+      <small class="form-text text-muted" 
+        *ngIf="loginForm.controls.email.touched && loginForm.controls.email.errors?.required">
+          Please enter email address.!
+      </small>
+
+      <small class="form-text text-muted"
+      *ngIf="loginForm.controls.email.touched && loginForm.controls.email.errors?.email">
+        Email address not well formed.!
+      </small>
+    </div>
+    
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" formControlName="password" placeholder="Password">
+    </div>
+    <button type="Login" class="btn btn-primary" [disabled]="!loginForm.valid">Login</button>
+  </form>
+</div>
+<nav>
+    <td><a class="nav-link" routerLink="pricing">Signup</a></td>
+    <td><a class="nav-link" routerLink="pricing">Forget-Password</a></td>
+  
+</nav>
+</table>
+<table align="center">
+    <h4 class="text-center">Login Page for Customer</h4>
+
+<div class="container">
+	<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
+		<div class="form-group">
+			<label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" formControlName="email" placeholder="Enter email">
+      <small class="form-text text-muted" 
+        *ngIf="loginForm.controls.email.touched && loginForm.controls.email.errors?.required">
+          Please enter email address.!
+      </small>
+
+      <small class="form-text text-muted"
+      *ngIf="loginForm.controls.email.touched && loginForm.controls.email.errors?.email">
+        Email address not well formed.!
+      </small>
+    </div>
+    
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" formControlName="password" placeholder="Password">
+    </div>
+    <button type="Login" class="btn btn-primary" [disabled]="!loginForm.valid">Login</button>
+  </form>
+</div>
+<nav>
+    <td><a class="nav-link" routerLink="pricing">Signup</a></td>
+    <td><a class="nav-link" routerLink="pricing">Forget-Password</a></td>
+  
+</nav>
+</table>

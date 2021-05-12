@@ -1,0 +1,48 @@
+<h1>Product List</h1>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>IMAGE</th>
+        <th>NAME</th>
+        <th>PRICE</th>
+        <th>ACTION</th>
+    </tr>
+    
+    
+    
+    <tr *ngFor="let x of user1">
+        <td>{{x.id}}</td>
+        <td><img [src]="src1"[height]="height1"[width]="width1"></td>
+        <td>{{x.name}}</td>
+        <td>{{x.price}}</td>
+        <td><button>Add Cart</button></td>
+    </tr>
+    <tr *ngFor="let x2 of user2">
+        <td>{{x2.id}}</td>
+        <td><img [src]="src2"[height]="height2"[width]="width2"></td>
+        <td>{{x2.name}}</td>
+        <td>{{x2.price}}</td>
+        <td><button>Add Cart</button></td>
+    </tr>
+    <tr *ngFor="let x3 of user3">
+        <td>{{x3.id}}</td>
+        <td><img [src]="src3"[height]="height3"[width]="width3"></td>
+        <td>{{x3.name}}</td>
+        <td>{{x3.price}}</td>
+        <td><button >Add Cart</button></td>
+    </tr>
+    <tr *ngFor="let x4 of user4">
+        <td>{{x4.id}}</td>
+        <td><img [src]="src4"[height]="height4"[width]="width4"> </td>
+        <td>{{x4.name}}</td>
+        <td>{{x4.price}}</td>
+        <td><button>Add Cart</button>  <td>
+    </tr>
+    <tr *ngFor="let x5 of user5">
+        <td>{{x5.id}}</td>
+        <td><img [src]="src5"[height]="height5"[width]="width5">  </td>
+        <td>{{x5.name}}</td>
+        <td>{{x5.price}}</td>
+        <td><button>Add Cart</button></td>
+    </tr>
+</table>
